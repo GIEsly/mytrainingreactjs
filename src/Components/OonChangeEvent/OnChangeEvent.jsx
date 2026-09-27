@@ -47,6 +47,7 @@ const OnChangeEvent = () => {
   const [Address, setAddress] = useState()
   const [Gender, setGender] = useState()
   const [Message, setMessage] = useState()
+  const [ColorPicker, setColorPicker] = useState()
 
   const handleFirstName = (e) => {
     setFirstName(e.target.value)
@@ -65,6 +66,9 @@ const OnChangeEvent = () => {
   }
   const handleMessage = (e) => {
     setMessage(e.target.value)
+  }
+  const handleColor = (e) => {
+    setColor(e.target.value)
   }
 
 
@@ -201,16 +205,25 @@ const OnChangeEvent = () => {
                       <textarea value={Message} onChange={handleMessage} placeholder='Enter your message here!' className='messagetext'/>
                     </div>
 
+                    <div className="colorPicker">
+                      <label>
+                        Select Your Color: &nbsp;
+                        <input type="color" value={Color} onChange={handleColor} />
+                      </label>
+                    </div>
+
 
                   </form>
                 </div>
               </div>
 
-              <div className="box2">
+              {/* Second Information Sheet Section --- */}
+
+              <div className="box22">
                 <h2>Record Sheet Data</h2>
                 <p>Your Personal information...</p>
 
-                <div className="nameContainer">
+                <div className="nameContainer" >
 
                   <div className="fullname">
                     <span>Full Name:</span> &nbsp; {FirstName} &nbsp; {Middle} &nbsp; {LastName}
