@@ -1,0 +1,9 @@
+$xxxl: 1440px;
+
+@mixin L{
+    @media (min-width:#{$xxxl}) {
+        @content;
+        width: 90%;
+        margin-inline:auto;
+    }
+}

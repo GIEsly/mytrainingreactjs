@@ -1,0 +1,17 @@
+@use '../../Scss/index.scss' as *;
+
+.cardcontainer{
+    @include blackPage();
+    .container{
+        .infoText{
+            margin:2em 0;
+            text-align: center;
+        }
+        .cardContainerFolder{
+            @include flex(space-between);
+            gap:2em;
+            flex-wrap:wrap;
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use '../../../Scss/index.scss' as *;
+
+.mycounter{
+    width: 50%;
+    margin-inline:auto;
+    padding: 2em;
+    border-radius: .5em;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    h1{
+        font-size: 10rem;
+    }
+
+    .innerButtonGroups{
+        @include flex(center)
+    }
+
+    p{
+        margin-top: 1em;
+    }
+}

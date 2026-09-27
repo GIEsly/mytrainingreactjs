@@ -1,0 +1,22 @@
+@mixin default{
+    margin:0;
+    padding:0;
+}
+
+@mixin blackPage {
+    margin: 2em 0;
+    padding: 2em 0;
+    background-color: black;
+    color:white;
+}
+
+@mixin input {
+    width:100%;
+    border-radius: .5em;
+    border: none;
+    padding: .5em;
+    margin-bottom: 1em;
+    &:focus{
+        outline: none;
+    }
+}

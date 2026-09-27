@@ -1,0 +1,16 @@
+@use '../../Scss/index.scss' as *;
+
+.ternaryCondition{
+    margin: 2em 0;
+    .container{
+
+        .innerInfo{
+            text-align: center;
+            margin: 2em 0;
+        }
+        
+        .innerStudents{
+            @include flex(space-between);
+        }
+    }
+}

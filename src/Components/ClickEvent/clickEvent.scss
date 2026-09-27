@@ -1,0 +1,11 @@
+@use '../../Scss/index.scss' as *;
+
+.clickEvent{
+    @include blackPage();
+    .container{
+
+        .innerInfo{
+            text-align: center;
+        }
+    }
+}

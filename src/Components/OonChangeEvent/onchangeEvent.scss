@@ -1,0 +1,150 @@
+@use '../../Scss/index.scss' as *;
+
+.onchangeContainer{
+    @include blackPage();
+    .container{
+
+        .innerInfo{
+            text-align: center;
+        }
+
+        .innerMain{
+            @include grid();
+            margin: 2em 0;
+
+            .box{
+                gap: 1em;
+                background-color: white;
+                height: 19rem;
+                border: solid black 1px;
+                color: black;
+                padding: 1em;
+                border-radius: .5em;
+                text-align: center;
+                display: grid;
+                place-items: center;
+                overflow: hidden;
+
+                h2{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: .8rem;
+
+                    span{
+                        font-weight: bold;
+                    }
+                };
+                .nameInfo{
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin-bottom: 2em;
+                }
+                input{
+                    text-align: center;
+                    padding: .5em;
+                    border-radius: .5em;
+                    border: none;
+                    background-color: rgba(178, 178, 178, 0.538);
+                    color: black;
+                    
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .lowerInfo{
+                    font-size: .7rem;
+                    text-align: center;
+                    margin-top: 1em;
+                }
+                textarea{
+                    background-color: yellow;
+                    border: none;
+                    border-radius: .5em;
+                    padding: 1em;
+                    font-size: .8rem;
+                    text-align: center;
+                    width: 100%;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                select{
+                    font-size: 1rem;
+                    padding: .5em;
+                    font-size: .7rem;
+
+                    option{
+                        font-size: .7rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .innerSecondInfo{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+
+            .box2{
+                background-color: rgb(74, 83, 255);
+                color: white;
+                padding: 2em;
+                margin: 2em 0;
+                border-radius: .5em;
+
+                h2{
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+                p{
+                    opacity: .5;
+                    margin-bottom: 2em;
+                }
+
+                .innerForm{
+                    .fullName{
+                        @include flex(space-between);
+                        font-size: 1rem;
+                        input{
+                            @include input();
+                        }
+                    }
+                    .addressContainer{
+                        input{
+                            @include input();
+                        }
+                    }
+                    .gender{
+                        select{
+                            font-size: .8rem;
+                            background-color: black;
+                            color: white;
+
+                            &:focus{
+                                outline: none;
+                                padding: .5em;
+                                border-radius: .5em
+                            }
+                        }
+                    }
+                }
+
+                .nameContainer{
+                    .fullname, .addContainer, .gender{
+                        @include flex(space-between);
+                        font-size: 1.3rem;
+                        margin-bottom: 1em;
+                        span{
+                            text-transform: uppercase;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

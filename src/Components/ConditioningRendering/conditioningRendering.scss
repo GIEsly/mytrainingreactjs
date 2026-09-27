@@ -1,0 +1,15 @@
+@use '../../Scss/index.scss' as *;
+
+.conditioningRendering{
+    @include blackPage();
+    color: white;
+    .container{
+        .innerInfo{
+            text-align: center;
+        }
+
+        .wel{
+            text-align: center;
+        }
+    }
+}

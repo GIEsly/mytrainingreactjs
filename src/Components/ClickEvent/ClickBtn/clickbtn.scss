@@ -1,0 +1,9 @@
+@use '../../../Scss/index.scss' as *;
+
+.clickBtn{
+    @include flex(center);
+
+    img{
+        display: none;
+    }
+}

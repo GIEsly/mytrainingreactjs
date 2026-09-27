@@ -1,0 +1,24 @@
+@use '../../../Scss/index.scss' as *;
+
+.list {
+    .first, .converted, .arrayOfObject, .low, .high{
+        background-color: rgb(127, 187, 255);
+        margin: 1em;
+        padding: 2em;
+        p{
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 1em 0;
+        }
+    }
+
+    .innerLow-High-Calories{
+        @include flex(space-between);
+        
+        .low, .high{
+            flex: 1;
+        }
+
+    }
+}

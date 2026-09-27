@@ -1,0 +1,13 @@
+@use '../../Scss/index.scss' as *;
+
+.listContainer{
+    margin: 2em 0;
+    .container{
+        .innerInfo{
+            text-align: center;
+        }
+        .inner{
+            @include flex(space-between);
+        }
+    }
+}

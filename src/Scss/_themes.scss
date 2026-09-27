@@ -1,0 +1,13 @@
+$my-color-options: (
+    fontB: black,
+    fontHr: grey,
+    fontHr10: lighten(grey, 10%),
+    fontHr20: lighten(grey, 20%),
+    fontHr30: lighten(grey, 30%),
+    fontHr40: lighten(grey, 40%),
+    fontHr45: lighten(grey, 45%),
+);
+
+@function mytheme($my-colorName){
+    @return map-get($my-color-options, $my-colorName);
+}

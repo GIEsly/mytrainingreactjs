@@ -1,0 +1,17 @@
+@use '../../Scss/index.scss' as *;
+
+.welcome{
+    background-color:rgb(243, 243, 243);
+    padding:.7em 0;
+
+    h1{
+        font-size:1.8rem;
+        text-transform:uppercase;
+
+        span{
+            color:mytheme(fontHr);
+            font-style:italic;
+            font-size:.8rem;
+        }
+    }
+}
