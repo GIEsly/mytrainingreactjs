@@ -46,6 +46,7 @@ const OnChangeEvent = () => {
   const [LastName, setLastName] = useState()
   const [Address, setAddress] = useState()
   const [Gender, setGender] = useState()
+  const [Message, setMessage] = useState()
 
   const handleFirstName = (e) => {
     setFirstName(e.target.value)
@@ -59,9 +60,11 @@ const OnChangeEvent = () => {
   const handleAddress = (e) => {
     setAddress(e.target.value)
   }
-
   const handleGender = (e) => {
     setGender(e.target.value)
+  }
+  const handleMessage = (e) => {
+    setMessage(e.target.value)
   }
 
 
@@ -191,6 +194,13 @@ const OnChangeEvent = () => {
                       </label>
                     </div>
 
+                    <div className="message">
+                      <label>
+                        Message: &nbsp;
+                      </label>
+                      <textarea value={Message} onChange={handleMessage} placeholder='Enter your message here!' className='messagetext'/>
+                    </div>
+
 
                   </form>
                 </div>
@@ -212,6 +222,10 @@ const OnChangeEvent = () => {
 
                   <div className="gender">
                     <span>Gender:</span> &nbsp; {Gender}
+                  </div>
+
+                  <div className="messageContainer">
+                    <span>Message:</span> &nbsp; {Message}
                   </div>
 
                 </div>

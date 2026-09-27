@@ -131,13 +131,24 @@
                             }
                         }
                     }
+                    .message{
+                        margin: 1em 0;
+                        .messagetext{
+                            width: 100%;
+                            border-radius: .5em;
+                            margin-top: .5em;
+                            padding: 1em;
+                            font-size: .9rem;
+                        }
+                    }
                 }
 
                 .nameContainer{
-                    .fullname, .addContainer, .gender{
+                    .fullname, .addContainer, .gender, .messageContainer{
                         @include flex(space-between);
                         font-size: 1.3rem;
                         margin-bottom: 1em;
+                        text-align: end;
                         span{
                             text-transform: uppercase;
                             font-size: .8rem;
