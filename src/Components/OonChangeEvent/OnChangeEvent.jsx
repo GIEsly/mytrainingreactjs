@@ -68,9 +68,8 @@ const OnChangeEvent = () => {
     setMessage(e.target.value)
   }
   const handleColor = (e) => {
-    setColor(e.target.value)
+    setColorPicker(e.target.value)
   }
-
 
   return (
     <div className="onchangeContainer">
@@ -212,14 +211,13 @@ const OnChangeEvent = () => {
                       </label>
                     </div>
 
-
                   </form>
                 </div>
               </div>
 
               {/* Second Information Sheet Section --- */}
 
-              <div className="box22">
+              <div className="box22" style={{backgroundColor: ColorPicker}}>
                 <h2>Record Sheet Data</h2>
                 <p>Your Personal information...</p>
 
